@@ -4,6 +4,9 @@ import { Provider } from "react-redux";
 import App from "./App";
 import store from "./store";
 import * as serviceWorker from "./serviceWorker";
+import { initAxiosConfig } from "./utilities/axios";
+
+initAxiosConfig();
 
 ReactDOM.render(
   <Provider store={store}>

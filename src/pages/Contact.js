@@ -8,20 +8,20 @@ const Contact = () => {
         <hr className="my-4" />
         <div className="card">
           <div className="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
                 <i className="fa fa-phone" /> +456 789 01 23
               </li>
-              <li class="list-group-item">
+              <li className="list-group-item">
                 <i className="fa fa-skype" /> forum.app
               </li>
-              <li class="list-group-item">
+              <li className="list-group-item">
                 <i className="fa fa-at" /> email@forum.app
               </li>
-              <li class="list-group-item">
+              <li className="list-group-item">
                 <i className="fa fa-map-marker" /> Street Address 34
               </li>
-              <li class="list-group-item">
+              <li className="list-group-item">
                 <i className="fa fa-facebook" /> https://facebook.com/forum.app
               </li>
             </ul>

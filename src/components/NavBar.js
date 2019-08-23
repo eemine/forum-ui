@@ -25,7 +25,7 @@ const NavBar = () => {
           </NavLink>
         </li>
       </ul>
-      <button class="btn btn-sm btn-light" type="button">
+      <button className="btn btn-sm btn-light" type="button">
         Log out
       </button>
     </nav>
