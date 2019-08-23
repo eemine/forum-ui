@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -10,6 +11,7 @@ import NotFound from "./pages/NotFound";
 const App = () => {
   return (
     <Router>
+      <NavBar />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contact" component={Contact} />
