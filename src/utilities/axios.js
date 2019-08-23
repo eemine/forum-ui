@@ -1,7 +1,7 @@
 import axios from "axios";
-import { UESR_TOKEN } from "./constants";
+import { USER_TOKEN } from "./constants";
 
-const userToken = localStorage.getItem(UESR_TOKEN);
+const userToken = localStorage.getItem(USER_TOKEN);
 
 export const initAxiosConfig = () => {
   axios.defaults.baseURL = "/api/v1";
@@ -17,5 +17,5 @@ export const setToken = token => {
 };
 
 export const removeToken = () => {
-  axios.defaults.headers.common["Authorization"] = null;
+  axios.defaults.headers.common["Authorization"] = undefined;
 };

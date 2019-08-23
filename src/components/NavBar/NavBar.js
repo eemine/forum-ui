@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import foxIcon from "./fox.svg";
 
-const NavBar = () => {
+const NavBar = ({ logout, token }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
@@ -25,9 +25,11 @@ const NavBar = () => {
           </NavLink>
         </li>
       </ul>
-      <button className="btn btn-sm btn-light" type="button">
-        Log out
-      </button>
+      {token && (
+        <button onClick={logout} className="btn btn-sm btn-light" type="button">
+          Log out
+        </button>
+      )}
     </nav>
   );
 };

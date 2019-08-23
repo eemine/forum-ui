@@ -1,1 +1,1 @@
-export const UESR_TOKEN = "userToken";
+export const USER_TOKEN = "userToken";
