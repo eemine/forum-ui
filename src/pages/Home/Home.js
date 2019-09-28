@@ -11,16 +11,18 @@ class Home extends Component {
       <div className="container">
         <br />
         <h3>Categories</h3>
-        {this.props.categories.map(
-          ({ imagePath, name, description, urlId }) => (
-            <Card
-              imagePath={imagePath}
-              title={name}
-              description={description}
-              link={urlId}
-            />
-          )
-        )}
+        <div className="card-columns">
+          {this.props.categories.map(
+            ({ imagePath, name, description, urlId }) => (
+              <Card
+                imagePath={imagePath}
+                title={name}
+                description={description}
+                link={`categories/${urlId}`}
+              />
+            )
+          )}
+        </div>
       </div>
     );
   }
